@@ -3,5 +3,7 @@
 # `gcloud storage buckets create` da eseguire una tantum (lo fa anche in automatico il
 # job "plan" della pipeline .github/workflows/terraform.yml).
 # Progetto dedicato: <project_id>-tfstate. Progetto condiviso: <resource_prefix>-tfstate.
-bucket = "its-ict-template-sage-tfstate"
+
+
+bucket = "its-ict-sage-barbara-cucchiara-tfstate"
 prefix = "sage"
