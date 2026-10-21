@@ -11,4 +11,5 @@ variable "region" {
 variable "resource_prefix" {
   description = "Prefisso per i nomi delle risorse"
   type        = string
+  default     = "Sage"
 }
