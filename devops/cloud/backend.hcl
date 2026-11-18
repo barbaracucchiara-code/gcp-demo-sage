@@ -5,5 +5,5 @@
 # Progetto dedicato: <project_id>-tfstate. Progetto condiviso: <resource_prefix>-tfstate.
 
 
-bucket = "its-ict-sage-barbara-cucchiara-tfstate"
+bucket = "its-ict-barbara-cucchiara-tfstate"
 prefix = "sage"

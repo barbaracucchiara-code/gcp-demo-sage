@@ -1,3 +1,3 @@
-project_id      = "its-ict-template-sage"
+project_id      = "its-ict-sage-csp26"
 region          = "europe-west6"
 resource_prefix = "its-ict-barbara-cucchiara"

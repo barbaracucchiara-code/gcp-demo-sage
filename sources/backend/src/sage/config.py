@@ -22,6 +22,10 @@ class AppConfig(BaseSettings):
     firestore_collection: str = "chunks"
     top_k: int = 5
 
+    # Cloud Storage: bucket con il file istruzioni.md (derivato da resource_prefix)
+    instructions_bucket: str = ""
+    instructions_file: str = "istruzioni.md"
+
     # Vertex AI models
     chat_model: str = "gemini-2.5-flash"
     embedding_model: str = "text-embedding-004"
@@ -43,6 +47,7 @@ class AppConfig(BaseSettings):
         if not self.resource_prefix:
             return self
         self.firestore_database = self.resource_prefix
+        self.instructions_bucket = f"{self.resource_prefix}-instructions"
         # BigQuery dataset ids allow only letters, digits and underscores.
         self.bq_dataset = f"{self.resource_prefix.replace('-', '_')}_{self.bq_dataset}"
         return self
